@@ -126,33 +126,29 @@ export const projects: Project[] = [
     {
         id: 4,
         name: "Strongly",
-        images: ["/projects/strongly/1.png"],
+        images: ["/projects/strongly/1.png", "/projects/strongly/2.png", "/projects/strongly/3.png", "/projects/strongly/4.png", "/projects/strongly/5.png"],
         shortDescription: "Strongly is a platform where regular gym goers can track their attendance + admin can manage the gym members data",
         longDescription: (
             <>
-                <p>A scalable YouTube-style backend built with Bun and Hono, designed to handle video content and user interactions efficiently.</p>
+                <p>Strongly is a gym management platform designed for both gym-goers and administrators.</p>
+
+                <p>Users can track daily attendance by simply pressing a button when they visit the gym.</p>
+
+                <p>Admin users can manage gym members, view attendance records, and handle memberships.</p>
 
                 <p>
-                    The system uses <code>MongoDB</code> with <code>Mongoose</code> for data management, while media files are stored using <code>Cloudinary</code> and <code>Vercel Blob</code> for optimized storage and delivery.
+                    This project is built using Next.js with TypeScript and Tailwind CSS, deployed on Vercel, with database operations handled through <code>Mongodb Atlas</code>.
                 </p>
 
                 <p>
-                    Secure authentication is implemented using <code>Better Auth</code>, enabling session-based access control for protected routes.
+                    Secure authentication is implemented using <code>Better Auth</code> with <code>Google OAuth</code>, enabling session-based access control for protected routes.
                 </p>
-
-                <p>It includes core features like videos, playlists, tweets, comments, likes, subscriptions, and watch history, closely mimicking a real-world content platform.</p>
 
                 <p>
-                    Built around <strong>50+ production-grade APIs</strong>, covering complex real-world backend scenarios and scalable architecture patterns.
+                    Built around <strong>10+ production-grade APIs</strong>, covering complex real-world backend scenar ios and scalable architecture patterns.
                 </p>
 
-                <p>Advanced querying with pagination, sorting, and filtering ensures efficient data retrieval across endpoints.</p>
-
-                <p>
-                    Input validation is handled using <code>Zod</code>, and global rate limiting improves API security and reliability.
-                </p>
-
-                <p>This project demonstrates a production-ready backend architecture for a modern content-driven platform.</p>
+                <p>This project demonstrates a real world production-ready architecture for a modern gym management platform.</p>
             </>
         ),
         techStack: [
@@ -160,8 +156,10 @@ export const projects: Project[] = [
             { name: "Next.js", icon: "/icons/next.svg" },
             { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
             { name: "MongoDB", icon: "/icons/mongodb.svg" },
+            { name: "Better Auth", icon: "/icons/better-auth.svg" },
+            { name: "Vercel", icon: "/icons/vercel.svg" },
         ],
-        githubLinks: [{ type: "backend", link: "https://github.com/sumitdoescode/strongly" }],
-        liveLink: "https://strongly.vercel.app/",
+        githubLinks: [{ type: "fullstack", link: "https://github.com/sumitdoescode/strongly" }],
+        liveLink: "https://strongly.sumitdoescode.me/",
     },
 ];
