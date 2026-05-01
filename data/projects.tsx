@@ -162,4 +162,70 @@ export const projects: Project[] = [
         githubLinks: [{ type: "fullstack", link: "https://github.com/sumitdoescode/strongly" }],
         liveLink: "https://strongly.sumitdoescode.me/",
     },
+    {
+        id: 5,
+        name: "Fake Api",
+        images: ["/projects/fake-api/1.png"],
+        shortDescription: "Fake Api is a free mock RESTful API service for developers to test and prototype their applications.",
+        longDescription: (
+            <>
+                <p>
+                    Fake Api is a free mock RESTful API service designed to streamline the development and testing of web applications. It provides a simple yet powerful solution for developers who need a reliable source of dummy data without the
+                    overhead of setting up their own backend.
+                </p>
+
+                <p>
+                    The service supports standard CRUD (Create, Read, Update, Delete) operations through simple HTTP requests. Developers can interact with the API using familiar methods such as GET, POST, PUT, and DELETE to simulate real-world data
+                    interactions.
+                </p>
+
+                <p>
+                    Whether you're building a frontend prototype, developing a mobile application, or testing backend integrations, Fake Api eliminates the need for a custom backend server during the initial development phases. This allows developers
+                    to focus on building their application's core features rather than managing backend infrastructure.
+                </p>
+
+                <p>
+                    The API provides a flexible schema that can be easily adapted to various use cases, making it a versatile tool for developers working on different types of projects. With its straightforward API design and reliable response times,
+                    Fake Api has become an essential resource for developers seeking a hassle-free solution for mock data generation.
+                </p>
+
+                <p>This project is deployed on cloudflare workers and can handle thousands of requests per second.</p>
+            </>
+        ),
+        techStack: [
+            { name: "Typescript", icon: "/icons/ts.svg" },
+            { name: "Cloudflare Workers", icon: "/icons/cloudflare.svg" },
+            { name: "Hono", icon: "/icons/hono.svg" },
+        ],
+        githubLinks: [{ type: "backend", link: "https://github.com/sumitdoescode/fake-api" }],
+        liveLink: "https://api.sumitdoescode.me/",
+    },
+    {
+        id: 6,
+        name: "URL Shortner",
+        images: ["/projects/url-shortner/1.png"],
+        shortDescription: "URL Shortner is a free URL shortner service for developers to test and prototype their applications.",
+        longDescription: (
+            <>
+                <p>
+                    URL Shortner is a free URL shortner service designed to streamline the development and testing of web applications. It provides a simple yet powerful solution for developers who need a reliable source of dummy data without the
+                    overhead of setting up their own backend.
+                </p>
+
+                <p>I built this project only for learning purposes</p>
+
+                <p>Instead of doing db call on every redirect, we have implemented redis caching here</p>
+
+                <p>This project is not deployed. But the source code can be viewed on github</p>
+            </>
+        ),
+        techStack: [
+            { name: "Typescript", icon: "/icons/ts.svg" },
+            { name: "Redis", icon: "/icons/redis.svg" },
+            { name: "Bun", icon: "/icons/bun.svg" },
+            { name: "Hono", icon: "/icons/hono.svg" },
+        ],
+        githubLinks: [{ type: "backend", link: "https://github.com/sumitdoescode/url-shortner" }],
+        liveLink: "https://api.sumitdoescode.me/",
+    },
 ];
