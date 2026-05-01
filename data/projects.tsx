@@ -191,7 +191,7 @@ export const projects: Project[] = [
             { name: "TypeScript", icon: "/icons/ts.svg" },
             { name: "Cloudflare Workers", icon: "/icons/cloudflare.svg" },
             { name: "Hono", icon: "/icons/hono.svg" },
-            { name: "Zod", icon: "/icons/zod.svg" },
+            // { name: "Zod", icon: "/icons/zod.svg" },
         ],
 
         githubLinks: [
