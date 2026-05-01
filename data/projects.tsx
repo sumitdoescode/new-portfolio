@@ -164,68 +164,79 @@ export const projects: Project[] = [
     },
     {
         id: 5,
-        name: "Fake Api",
+        name: "Fake API",
         images: ["/projects/fake-api/1.png"],
-        shortDescription: "Fake Api is a free mock RESTful API service for developers to test and prototype their applications.",
+
+        shortDescription: "Mock REST API built with Hono, TypeScript, and Cloudflare Workers featuring 25+ endpoints for frontend practice and UI testing.",
+
         longDescription: (
             <>
                 <p>
-                    Fake Api is a free mock RESTful API service designed to streamline the development and testing of web applications. It provides a simple yet powerful solution for developers who need a reliable source of dummy data without the
-                    overhead of setting up their own backend.
+                    Fake API is a lightweight mock REST API built for frontend developers to test applications without creating a real backend. The API includes 25+ endpoints covering users, posts, comments, animals, health checks, delay simulation,
+                    and IP detection.
                 </p>
+
+                <p>It supports common REST operations including GET, POST, PUT, and DELETE, along with features like pagination, search endpoints, nested routes, and configurable response delays for testing loaders and skeleton states.</p>
 
                 <p>
-                    The service supports standard CRUD (Create, Read, Update, Delete) operations through simple HTTP requests. Developers can interact with the API using familiar methods such as GET, POST, PUT, and DELETE to simulate real-world data
-                    interactions.
+                    Built using Hono, TypeScript, Cloudflare Workers, and Zod, the API is optimized for fast response times and scalable performance. Seed data is loaded from local JSON files, while runtime-created data is temporarily stored in
+                    memory.
                 </p>
 
-                <p>
-                    Whether you're building a frontend prototype, developing a mobile application, or testing backend integrations, Fake Api eliminates the need for a custom backend server during the initial development phases. This allows developers
-                    to focus on building their application's core features rather than managing backend infrastructure.
-                </p>
-
-                <p>
-                    The API provides a flexible schema that can be easily adapted to various use cases, making it a versatile tool for developers working on different types of projects. With its straightforward API design and reliable response times,
-                    Fake Api has become an essential resource for developers seeking a hassle-free solution for mock data generation.
-                </p>
-
-                <p>This project is deployed on cloudflare workers and can handle thousands of requests per second.</p>
+                <p>The project is fully CORS-enabled and deployed on Cloudflare Workers, making it ideal for frontend prototyping, mock integrations, and testing real-world API flows.</p>
             </>
         ),
+
         techStack: [
-            { name: "Typescript", icon: "/icons/ts.svg" },
+            { name: "TypeScript", icon: "/icons/ts.svg" },
             { name: "Cloudflare Workers", icon: "/icons/cloudflare.svg" },
             { name: "Hono", icon: "/icons/hono.svg" },
+            { name: "Zod", icon: "/icons/zod.svg" },
         ],
-        githubLinks: [{ type: "backend", link: "https://github.com/sumitdoescode/fake-api" }],
+
+        githubLinks: [
+            {
+                type: "backend",
+                link: "https://github.com/sumitdoescode/fake-api",
+            },
+        ],
+
         liveLink: "https://api.sumitdoescode.me/",
     },
     {
         id: 6,
-        name: "URL Shortner",
+        name: "URL Shortener",
+
         images: ["/projects/url-shortner/1.png"],
-        shortDescription: "URL Shortner is a free URL shortner service for developers to test and prototype their applications.",
+
+        shortDescription: "A simple URL shortener built with Hono, Bun, TypeScript, and Redis to learn backend architecture and caching concepts.",
+
         longDescription: (
             <>
-                <p>
-                    URL Shortner is a free URL shortner service designed to streamline the development and testing of web applications. It provides a simple yet powerful solution for developers who need a reliable source of dummy data without the
-                    overhead of setting up their own backend.
-                </p>
+                <p>URL Shortener is a backend-focused learning project built to understand how real-world URL shortening services work. The application allows users to generate short URLs and redirect users to the original destination links.</p>
 
-                <p>I built this project only for learning purposes</p>
+                <p>The project was built using Hono, Bun, TypeScript, and Redis, with a strong focus on learning backend system design concepts such as routing, caching, and request handling.</p>
 
-                <p>Instead of doing db call on every redirect, we have implemented redis caching here</p>
+                <p>Instead of performing a database lookup on every redirect request, Redis caching is used to improve redirect performance and reduce repeated database operations.</p>
 
-                <p>This project is not deployed. But the source code can be viewed on github</p>
+                <p>This project was created mainly for learning purposes and experimenting with backend architecture patterns. It is not currently deployed, but the complete source code is available on GitHub.</p>
             </>
         ),
+
         techStack: [
-            { name: "Typescript", icon: "/icons/ts.svg" },
+            { name: "TypeScript", icon: "/icons/ts.svg" },
             { name: "Redis", icon: "/icons/redis.svg" },
             { name: "Bun", icon: "/icons/bun.svg" },
             { name: "Hono", icon: "/icons/hono.svg" },
         ],
-        githubLinks: [{ type: "backend", link: "https://github.com/sumitdoescode/url-shortner" }],
-        liveLink: "https://api.sumitdoescode.me/",
+
+        githubLinks: [
+            {
+                type: "backend",
+                link: "https://github.com/sumitdoescode/url-shortner",
+            },
+        ],
+
+        liveLink: "",
     },
 ];

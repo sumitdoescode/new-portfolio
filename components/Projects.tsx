@@ -17,7 +17,9 @@ const Projects = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-6 md:gap-8 mt-10">
                     {/* each project card */}
                     {projects.map((project) => {
-                        return <ProjectCard key={project.id} {...project} />;
+                        if (project.id <= 4) {
+                            return <ProjectCard key={project.id} {...project} />;
+                        }
                     })}
                 </div>
 
