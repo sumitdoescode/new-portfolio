@@ -64,7 +64,7 @@ const Hero = () => {
                 </div>
 
                 <div className="flex items-center gap-2 mt-8">
-                    <Link href="/resume.pdf" target="_blank">
+                    <Link href="/main/resume.pdf" target="_blank">
                         <Button variant="default" size={"lg"} className={"cursor-pointer text-base px-4"}>
                             Download Resume
                             <Download />
