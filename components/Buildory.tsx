@@ -1,5 +1,7 @@
 import Container from "./Container";
-import { Rocket, Users, Briefcase } from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Rocket, Users, Briefcase, ArrowRight } from "lucide-react";
 
 const Buildory = () => {
     return (
@@ -45,6 +47,15 @@ const Buildory = () => {
                             I reached out to many potential clients, interacted with businesses, and delivered websites for a few clients. Along the way, I learned tools like Figma, improved my design skills, and understood the importance of
                             communication and selling.
                         </p>
+
+                        <div className="mt-6">
+                            <Link href="/work">
+                                <Button variant="default" size="lg" className="gap-2 cursor-pointer">
+                                    See Client Work
+                                    <ArrowRight size={16} />
+                                </Button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </Container>

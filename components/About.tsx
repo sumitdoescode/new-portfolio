@@ -13,15 +13,17 @@ const About = () => {
                 {/* content */}
                 <div className="mt-10 max-w-3xl space-y-4 text-lg leading-8">
                     <p className="text-foreground">
-                        I started with an interest in design, which led me to web development. After learning <span className="font-mono">HTML, CSS, JavaScript</span>, I got deeply into building clean and interactive UIs.
+                        I started with UI design and frontend development, which later pushed me deeper into full-stack engineering. After learning
+                        <span className="font-mono font-semibold text-white"> HTML, CSS, and JavaScript,</span> I focused on building clean, interactive, and responsive user interfaces.
                     </p>
 
                     <p className="text-muted-foreground">
-                        To build complete applications, I learned backend using <span className="font-mono">Node.js, Express, MongoDB</span> and understood how the web works behind the scenes.
+                        To build complete applications, I expanded into backend development using <span className="font-mono font-semibold text-white">Node.js, Express, and MongoDB,</span> gaining a strong understanding of APIs, databases,
+                        authentication, and application architecture.
                     </p>
 
                     <p className="text-muted-foreground">
-                        Now I build full-stack apps with <span className="font-mono">React & Next.js</span>, focusing on performance and clean design.
+                        Now I build full-stack applications with <span className="font-mono font-semibold text-white">React and Next.js,</span> focusing on performance, scalability, and clean design.
                     </p>
                 </div>
 
